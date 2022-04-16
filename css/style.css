@@ -1,0 +1,143 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+  }
+  
+  html{
+    min-height: 100%;
+    position: relative;
+  }
+  
+  header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    background-color: #FF5733;
+    margin-bottom: 20px;
+  }
+  
+  body{
+    background-color: #FFC30F;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    font-family: Roboto;
+    font-size: 20px;
+    color:#FFFFFF;
+    margin: 0;
+    margin-bottom: 50px;
+  }
+  
+  .titulo {
+    color: #FFFFFF;
+    text-align: center;
+   }
+  
+  .items-juego{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .btns {
+    border: none;
+    background-color: #21618C;
+    padding: 2px;
+    width: 180px;
+    height: 40px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #FFFFFF;
+  }
+  
+  button{
+    outline: none;
+  }
+  
+  .btn-reset{
+    margin-top: 20px;
+    visibility: hidden;
+  }
+  
+  .visible{
+    visibility: visible;
+  }
+  
+  .text-input {
+    border-radius: 10px;
+    border: none;
+    display: block;
+    font-size: 15px;
+    padding: 8px;
+    width: 30%;
+    height: 45px;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 10px 0;
+    background: #FFFFFF;
+    text-align: center;
+  }
+  
+  .canvas{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    margin-bottom: 50px;
+  }
+  
+  .hanged{
+    display: none;
+    background-color: #FFFFFF;
+    padding: 30px 30px 70px 30px;
+    border-radius: 15px;
+  
+  }
+  
+  .hanged-visible{
+    display: block;
+  }
+  
+  .mensaje{
+    font-family: cursive;
+    font-size: 18px;
+    height: 14px;
+    display: block;
+    visibility: hidden;
+    color: black;
+  
+  }
+  
+  .error{
+    visibility: visible;
+    transition: opacity .3s; 
+    opacity: 1;  
+  }
+  
+  .footer{
+    display: flex;
+    height: 70px;
+    background-color: #FF5733;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  .social i{
+      font-size: 22px;
+      padding: 7px;
+      background: #F5F5F5;
+      color: #21618C;
+      border-radius: 50%;
+  }
+  
+  .modal-content{
+    background-color: rgb(227, 252, 160);
+    align-items: center;
+    color: black;
+    border-radius: 30px; 
+  }

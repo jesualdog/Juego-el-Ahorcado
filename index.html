@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Raleway:wght@500&family=Roboto:ital,wght@0,100;0,500;0,700;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <title>Juego el Ahorcado</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="titulo">Juego el Ahorcado</h1>
+    </header>
+
+    <section class = "items-juego">
+      <button class="btns btn-start" id="start-game">Iniciar Juego</button>
+      <input class="text-input" type="text" id="input-new-word" placeholder="Escriba una nueva palabra" onfocusout="inputFocusOut()" onfocus="inputFocusIn()">
+      <button class="btns btn-add" id="new-word">Agregar Palabra</button> 
+      <span class='mensaje'>"Debe ingresar solo letras sin espacios"</span>
+      <button class="btns btn-reset" id="reset-game">Reiniciar</button>
+    </section>
+
+   <section class= "canvas">
+      <canvas class="hanged" id="hanged" height="400px" width="600px"></canvas>
+    </section>
+
+    <section class="modal fade" id="myModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+            ¿Desea guardar la palabra ingresada?
+          </div>
+          <div class="modal-footer">
+            <button id="btn-yes" type="button" class="btns">Si</button>
+            <button id="btn-no" type="button" class="btns" data-dismiss="modal">No</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="social">
+        <a href="https://www.linkedin.com/in/jesualdo-guti%C3%A9rrez-686506183/" target="_blank">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/jesualdog/Juego-el-Ahorcado.git" target="_blank">
+          <i class="fa-brands fa-github-square"></i>
+        </a>
+      </div>
+    </footer>
+    <script src="js/ahorcado.js"></script>
+    <script src="js/canvas.js"></script>
+    <script src="https://kit.fontawesome.com/5a551c5102.js" crossorigin="anonymous"></script>
+  </body>
+</html>
