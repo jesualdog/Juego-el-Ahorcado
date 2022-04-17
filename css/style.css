@@ -100,7 +100,6 @@
   }
   
   .mensaje{
-    font-family: cursive;
     font-size: 18px;
     height: 14px;
     display: block;
@@ -136,7 +135,7 @@
   }
   
   .modal-content{
-    background-color: rgb(227, 252, 160);
+    background-color: #FFFFFF;
     align-items: center;
     color: black;
     border-radius: 30px; 
